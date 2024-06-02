@@ -20,6 +20,6 @@ app.get("/", (req, res) =>{
     app.use(express.static(path.resolve(__dirname, "client", "build")));
     res.sendFile(path.resolve(__dirname, "client" , "build", "index.html"));
 });
-app.listen(5000,()=>{
+app.listen(5173,()=>{
     console.log("start")
 });
