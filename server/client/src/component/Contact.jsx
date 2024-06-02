@@ -18,7 +18,7 @@ function Contact() {
 
   const handlesubmit=async(e)=>{
     e.preventDefault();
-    const res=await fetch('http://localhost:5000/contact',{
+    const res=await fetch(`${window.location.origin}/contact`,{
       method:'post',
       headers:{
         'Content-Type':'application/json'

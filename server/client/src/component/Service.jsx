@@ -24,7 +24,7 @@ function Service() {
   const [email, setEmail] = useState('')
   const handlenews = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:5000/newslater', {
+    const res = await fetch(`${window.location.origin}/newslater`, {
       method: 'post',
       headers: {
         'Content-Type': 'application/json'
